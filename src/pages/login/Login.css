@@ -1,0 +1,185 @@
+/* AuthWindow.css */
+@font-face {
+  font-family: 'GT Walsheim Pro';
+  src: url('./GT/GTWalsheimPro-Black.woff') format('woff2'),
+      url('./GT/GTWalsheimPro-Black.woff') format('woff');
+      
+}
+.login{
+  max-width: 1200px;
+  margin: 0 auto;
+
+}
+.auth-container {
+    width: 300px;
+    margin: 0 auto !important;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'GT Walsheim Pro';
+  }
+  
+  .auth-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'GT Walsheim Pro';
+  }
+  
+  .logo {
+    width: 100px;
+  }
+  
+  .what-is-pro-id {
+    font-size: 12px;
+    color: #7e7e7e;
+    text-decoration: none;
+    font-family: 'GT Walsheim Pro';
+  }
+  
+  .auth-form {
+    margin-top: 30px;
+    text-align: center;
+    font-family: 'GT Walsheim Pro';
+  }
+  
+  .auth-form h2 {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  .input-wrapper {
+    position: relative;
+    margin-bottom: 20px;
+    font-family: 'GT Walsheim Pro';
+  }
+  
+  .icon {
+    position: absolute;
+    left: 1px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 65px;
+  }
+  
+  .phone-input {
+    width: 100%;
+    padding: 10px 10px 10px 70px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-family: 'GT Walsheim Pro', monospace;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    outline: none;
+  }
+  .phone-input:focus-within {
+    box-shadow: 0 0 10px rgba(95, 224, 216, 1);
+    border: 2px solid  rgba(95, 224, 216, 1);
+  }
+  
+  .auth-button {
+    width: 100%;
+    padding: 12px;
+    background-color: black;
+    color: white;
+    font-size: 14px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: 'GT Walsheim Pro', monospace;
+  }
+  
+  .auth-button:hover {
+    background-color: #333;
+  }
+  
+  .restore-link {
+    display: block;
+    margin-top: 10px;
+    font-size: 12px;
+    text-align: end;
+    color: #7e7e7e;
+    text-decoration: none;
+    font-family: 'GT Walsheim Pro', monospace;
+  }
+  
+  .auth-footer {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 13px;
+    color: #7e7e7e;
+    font-family: 'GT Walsheim Pro', monospace;
+  }
+  
+  .auth-footer a {
+    color: #00a0a0;
+    font-family: 'GT Walsheim Pro', monospace;
+    text-decoration: none;
+  }
+
+
+  h3 {
+    color: #333;
+    font-weight: 500;
+    white-space: nowrap;
+    overflow: hidden;
+    position: relative;
+    width: 250px;
+    height: 32.5px;
+    font-family: 'GT Walsheim Pro' monospace;
+    text-align: left;
+    display: flex;
+    align-items: center;
+
+  }
+  
+  h3 span {
+    font-size: 14px;
+  }
+  
+  .message {
+    background-color: rgb(255, 255, 255);
+    color: #333;
+    display: block;
+    font-weight: 900;
+    overflow: hidden;
+    position: absolute;
+    left: 47%;
+    animation: openclose 5s ease-in-out infinite;
+  
+    font-family: 'GT Walsheim Pro' monospace;
+  }
+  
+  .word1 {
+    font-family: 'GT Walsheim Pro';
+
+
+  }
+  .word1 img{
+    width: 55px;
+  }
+  
+  @keyframes openclose {
+    0% {
+      top: 0rem;
+      width: 0;
+    }
+    
+    50% {
+      width: 27%;
+
+    
+    }
+    100% {
+      top: 0;
+      width: 0;
+      text-indent: 0;
+    }
+  }
+  

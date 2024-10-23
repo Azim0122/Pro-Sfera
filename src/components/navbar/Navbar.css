@@ -1,0 +1,125 @@
+@font-face {
+    font-family: 'GT Walsheim Pro Regular';
+    src: url('GTWalsheimPro-Regular.eot');
+    src: local('GT Walsheim Pro Regular'), local('GTWalsheimPro-Regular'),
+        url('GTWalsheimPro-Regular.eot?#iefix') format('embedded-opentype'),
+        url('GTWalsheimPro-Regular.woff2') format('woff2'),
+        url('GTWalsheimPro-Regular.woff') format('woff'),
+        url('GTWalsheimPro-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+nav .media{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem .5rem;
+    border-bottom: 1px solid #94EAE5;
+    max-width: 100% !important;
+    margin: 0 auto;
+ 
+}
+nav .media h1{
+    display: flex;
+    align-items: center;
+    gap: .3rem;
+}
+nav .media h1 img{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 150px;
+}
+nav .media .buttons{
+    display: flex;
+    align-items: center;
+    gap: .7em;
+}
+.btns{
+    display: flex;
+    gap: 10px;
+  }
+nav .media .buttons .btn1{
+    background-color: rgba(95, 224, 216, 1);
+    padding: 0.7rem 1rem;
+    border-radius: 1.5rem;
+    color: white;
+    font-weight: 500;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: 0.3s;
+    border: none;
+    font-family: 'GT Walsheim Pro Regular', sans-serif;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 1px;
+}
+nav .media .buttons .btn1 span{
+    font-weight: 500;
+}
+nav .media .buttons .btn1:hover{
+    background-color: rgba(40, 161, 153, 0.767);
+    box-shadow: 0 0 20px rgba(40, 161, 153, 0.767);
+    transform: scale(1);
+}
+nav .media .buttons .btn1:active{
+    transform: scale(0.9);
+}
+nav .media .buttons .btn2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+    padding: 1em 1rem;        
+    border-radius: 50%;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s;
+    border: none;
+    background-color: rgba(95, 224, 216, 1);
+}
+nav .media .buttons .btn2 i{
+    font-size: 1.2rem;
+}
+nav .media .buttons .btn2:hover{
+    background-color: rgba(40, 161, 153, 0.767);
+    box-shadow: 0 0 20px rgba(40, 161, 153, 0.767);
+    transform: scale(1);
+}
+nav .media .buttons .btn2:active{
+    transform: scale(0.9);
+}
+nav .media .buttons .btn-settings:hover i{
+    animation: logo 3s ease-in-out both;
+}
+@media screen and (max-width: 768px) {
+    .media{
+    padding: 0rem 1rem;
+    }
+    nav .media h1{
+        display: none;
+    }
+    nav .media .buttons{
+    padding: 0rem 1rem;
+       display: flex;
+       align-items: center;
+       justify-content: space-between;
+       width: 100%;
+       .btns{
+         display: flex;
+         gap: 10px;
+       }
+    }
+    
+    nav .media .buttons .btn2{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+    }
+    nav .media .buttons .btn3{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+    }
+}

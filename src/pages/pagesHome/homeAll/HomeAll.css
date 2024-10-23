@@ -1,0 +1,70 @@
+.boxs5{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 1rem;
+    flex-wrap: wrap;
+    width: 100% !important;
+    margin-top: -30px;
+ }
+ .box4{
+   width: 318.6px;
+   background: rgba(217, 217, 217, 1);
+   height: 320px;
+   border-radius: 20px;
+   position: relative;
+ }
+ .box4 .img{
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+ }
+ .box4 .img img{
+    width: 100%;
+    height: 100%;
+ }
+ .box4 .info5{
+   padding: 1rem;
+ }
+ .box4 .info5 .logo{
+   display: flex;
+   align-items: center;
+   gap: .5rem;
+   font-size: 14px;
+   font-weight: 400;
+ }
+ .box4 .info5 .logo img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+ }
+ .box4 .info5 .logo span{
+    font-weight: 500;
+    font-size: 14px;
+
+ }
+ .box4 .info5 .info-text{
+    font-size: 14px;
+    margin-top: 1rem;
+ }
+ .box4 .info5 .moment{
+    position: absolute;
+    bottom: 7px;
+    left: 1rem;
+    font-size: 14px;
+    font-weight: 400;
+    opacity: .5;
+    font-family:"GT Walsheim Pro";
+ }
+ @media screen and (max-width: 1200px) {
+    .boxs5{
+       justify-content: center;
+       margin-top: -40px;
+    }
+    .box4{
+       width: 100%;
+    }
+    .box4 .info5 .info-text{
+       margin-top: 5px !important;
+    }
+   
+ }

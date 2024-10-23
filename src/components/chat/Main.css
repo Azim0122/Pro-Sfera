@@ -1,0 +1,214 @@
+@font-face {
+    font-family: 'GT Walsheim Pro Regular';
+    src: url('GTWalsheimPro-Regular.eot');
+    src: local('GT Walsheim Pro Regular'), local('GTWalsheimPro-Regular'),
+        url('GTWalsheimPro-Regular.eot?#iefix') format('embedded-opentype'),
+        url('GTWalsheimPro-Regular.woff2') format('woff2'),
+        url('GTWalsheimPro-Regular.woff') format('woff'),
+        url('GTWalsheimPro-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+.main6{
+    flex: 1;
+    min-height: 100vh;
+    padding-bottom: 15vh;
+    position: relative;
+}
+.main6 .nav6{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 22px;
+    padding: 20px;
+    color: #585858;
+}
+.main6 .user-icon6{
+    cursor: pointer;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: #585858a1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.main6 .user-icon6 i{
+    font-size: 20px;
+    color: #ffffff;
+    transition: all 0.3s ease;
+}
+.user-icon6:hover{
+    background-color: #585858;
+    transition: all 0.3s ease;
+}
+.user-icon6:hover i{
+    color: #ffffff;
+    transform: scale(1.2);
+}
+.main-container6{
+    max-width: 900px;
+    margin: auto;
+}
+.main6 .main-container6 .greet6{
+    margin:  50px 0px;
+    font-size:  30px;
+    color: #c4c7c5;
+    font-weight: 500;
+    padding: 20px;
+}
+.logo-ai .logo-ai1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    background-color: #5FE0D8;
+    padding: 5px 7px;
+    border-radius: 50px;
+    cursor: pointer;
+
+}
+.logo-ai .logo-ai1 img{
+    padding: 10px;
+    background-color: white;
+    border-radius: 50%;
+}
+.logo-ai .logo-ai1 p{
+    color: white;
+    font-size: 25px;
+    padding: 0px 5px;
+    font-weight: 400;
+    font-family: 'GT Walsheim Pro Regular';
+}
+.main6 .main-container6 .greet6 span{
+    background: -webkit-linear-gradient(16deg, #4b90ff, #ff5546);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 35px;
+
+}
+.main6 .cards6{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 15px;
+    padding: 20px;
+
+}
+.main6 .cards6 .card6{
+    height: 200px;
+    padding: 10px;
+    background: #f0f4f9;
+    border-radius: 15px;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+.main6 .cards6 .card6 i{
+    font-size: 35px;
+    padding: 5px;
+    position: absolute;
+    border-radius: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    background: -webkit-linear-gradient(16deg, #4b90ff, #ff5546);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    z-index: 10;
+    transition: all 0.3s ease;
+}
+.main6 .cards6 .card6 p{
+    font-size: 17px;
+    position: absolute;
+    top: -63px;
+    transition: all 0.3s ease;
+    background: -webkit-linear-gradient(16deg, #4000ff, #ff0000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.main6 .cards6 .card6:hover{
+    transform: scale(1.1);
+    background: #dfe4ea;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
+.main6 .cards6 .card6:hover i{
+    background: -webkit-linear-gradient(16deg, #ff5546, #4b90ff);
+    -webkit-background-clip: text;
+    transform: translateY(45px) translateX(45px);
+
+}
+.main6 .cards6 .card6:hover p{
+    top: 10px;
+  
+}
+.main-bottom6{
+    position: absolute;
+    bottom: 150;
+    width: 100%;
+    max-width: 900px;
+    padding: 0px  20px;
+    margin: auto; 
+    margin-top: 40px;
+}
+.search-box6{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    background: #f0f4f9;
+    padding: 10px 20px;
+    border-radius: 50px;
+}
+.search-box6 input{
+    flex: 1;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    padding: 8px ;
+    font-size: 18px;
+
+}
+.search-box6 div{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+}
+.search-box6 div i{
+    font-size: 20px;
+    cursor: pointer;
+
+}
+.main6 .bottom-info6{
+    font-size: 13px ;
+    margin: 15px auto;
+    text-align: center;
+    font-weight: 300;
+
+}
+@media screen and (max-width: 1200px) {
+
+    .main6 .cards6{ 
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+
+    }
+
+    .main6 .cards6 .card6 p{
+        font-size: 15px;
+
+    }
+    .main-bottom6{
+        width: 100% !important;
+    }
+    .search-box6{
+        width: 100% !important;
+
+    }
+    .search-box6 input{
+        width: 100% !important;
+    }
+}

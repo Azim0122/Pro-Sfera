@@ -1,0 +1,33 @@
+    @font-face {
+        font-family: 'GT Walsheim Pro';
+        src: url('./GT/GTWalsheimPro-Black.woff') format('woff2'),
+            url('./GT/GTWalsheimPro-Black.woff') format('woff');
+    }
+    * {
+        margin: 0 ;
+        padding: 0;
+        box-sizing: border-box;
+        /* font-family: 'GT Walsheim Pro', unset ; */
+    }
+   
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .container2 {
+        max-width: 959px;
+        margin: 0 auto;
+    }
+
+   
+    .container4 {
+        max-width: 1000px;
+        position: relative;
+        /* left: 40px; */
+    }
+
+    body {
+        background: rgba(245, 246, 247, 1);
+        font-family: GT Walsheim Pro;
+    }

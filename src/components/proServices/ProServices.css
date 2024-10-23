@@ -1,0 +1,932 @@
+@font-face {
+    font-family: 'GT Walsheim Pro';
+    src: url('./GT/GTWalsheimPro-Black.woff') format('woff2'),
+        url('./GT/GTWalsheimPro-Black.woff') format('woff');
+}
+ .boxs{
+    display: flex;
+    align-items: center;
+   flex-wrap: wrap;
+   width: 100%;
+   margin-bottom: 20px;
+   gap: 26px;
+}
+.boxs7{
+    display: flex;
+    align-items: center;
+   flex-wrap: wrap;
+   width: 100%;
+   margin-bottom: 20px;
+   
+}
+ .boxs .box{
+    width: 23%;
+    height: 170px;
+    border-radius: 20px;
+    padding: 1rem;
+    background: rgba(254, 254, 254, 1);
+    position: relative;
+    overflow: hidden;
+    transition: all .5s ease;
+}
+ .boxs .box .box-top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: .5rem;
+    position: relative;
+    transition: all .5s ease;
+
+}
+ .boxs .box .box-top span{
+    font-weight: 300;
+    font-size: 18px;
+    color:  rgba(5, 5, 5, 1);
+    opacity: .6;
+    font-family: 'GT Walsheim Pro' monospace;
+    text-transform: uppercase;
+    transition: all .5s ease;
+}
+ .boxs .box .box-top a i{
+    font-size: 25px;
+    padding: .5rem;
+    border-radius: 50%;
+    color: rgb(0, 0, 0);
+    transform: rotate(45deg) ;
+    position: absolute;
+    right: -5px;
+    top: -10px;
+    color: #B10700;
+    cursor: pointer;
+}   
+ .boxs .box .box-bottom{
+    color: #B10700;
+    position: absolute;
+    top: 85%;
+    left: 33.5%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    transition: all .5s ease;
+
+}
+ .boxs .box .box-bottom p{
+    font-weight: 700;
+    font-size: 32px;
+    color: #B10700;
+    font-family: 'GT Walsheim Pro' monospace;
+    text-align: left;
+    transition: .5s ease-in-out;
+    text-transform: uppercase;
+
+}
+
+/* 2 */
+ .boxs .box:nth-child(2){
+    width: 23%;
+    height: 170px;
+    border-radius: 20px;
+    padding: 1rem;
+    background: rgba(254, 254, 254, 1);
+    position: relative;
+    overflow: hidden;
+    transition: all .5s ease;
+}
+ .boxs .box:nth-child(2) .box-top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: .5rem;
+    position: relative;
+    transition: all .5s ease;
+
+}
+ .boxs .box:nth-child(2) .box-top span{
+    font-weight: 300;
+    font-size: 18px;
+    color:  rgba(5, 5, 5, 1);
+    opacity: .6;
+    font-family: 'GT Walsheim Pro' monospace;
+    transition: all .5s ease;
+}
+ .boxs .box:nth-child(2) .box-top i{
+    font-size: 25px;
+    padding: .5rem;
+    border-radius: 50%;
+    color: rgb(0, 0, 0);
+    transform: rotate(45deg) ;
+    position: absolute;
+    right: 0;
+    color: #141414;
+    cursor: pointer;
+}   
+.boxs .box:nth-child(2) .box-bottom{
+    color: #141414;
+    position: absolute;
+    top: 85%;
+    left: 44%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .5s ease;
+
+}
+ .boxs .box:nth-child(2) .box-bottom p{
+    font-weight: 700;
+    font-size: 20px;
+    transform: scale(1.4);
+    color: #141414;
+    font-family: 'GT Walsheim Pro' monospace;
+    text-align: left;
+    transition: .5s ease-in-out;
+   text-transform: uppercase;
+}
+
+/* 3 */
+ .boxs .box:nth-child(3){
+    width: 23%;
+    height: 170px;
+    border-radius: 20px;
+    padding: 1rem;
+    background: rgba(254, 254, 254, 1);
+    position: relative;
+    overflow: hidden;
+    transition: all .5s ease;
+}
+ .boxs .box:nth-child(3) .box-top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: .5rem;
+    position: relative;
+    transition: all .5s ease;
+
+}
+ .boxs .box:nth-child(3) .box-top span{
+    font-weight: 300;
+    font-size: 18px;
+    color:  rgba(5, 5, 5, 1);
+    opacity: .6;
+       font-family: 'GT Walsheim Pro' monospace;
+    transition: all .5s ease;
+}
+ .boxs .box:nth-child(3) .box-top i{
+    font-size: 25px;
+    padding: .5rem;
+    border-radius: 50%;
+    color: rgb(0, 0, 0);
+    transform: rotate(45deg) ;
+    position: absolute;
+    right: 0;
+    color: #FFB72D;
+    cursor: pointer;
+}   
+ .boxs .box:nth-child(3) .box-bottom{
+    color: #FFB72D;
+    position: absolute;
+    top: 85%;
+    left: 32%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .5s ease;
+
+}
+ .boxs .box:nth-child(3) .box-bottom p{
+    font-weight: 700;
+    font-size: 32px;
+    color: #FFB72D;
+       font-family: 'GT Walsheim Pro' monospace;
+    text-align: left;
+    transition: .5s ease-in-out;
+  text-transform: uppercase;
+}
+
+/* 4 */
+ .boxs .box:nth-child(4){
+    width: 23%;
+    height: 170px;
+    border-radius: 20px;
+    padding: 1rem;
+    background: rgba(254, 254, 254, 1);
+    position: relative;
+    overflow: hidden;
+    transition: all .5s ease;
+}
+ .boxs .box:nth-child(4) .box-top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: .5rem;
+    position: relative;
+    transition: all .5s ease;
+
+}
+ .boxs .box:nth-child(4) .box-top span{
+    font-weight: 300;
+    font-size: 18px;
+    color:  rgba(5, 5, 5, 1);
+    opacity: .6;
+       font-family: 'GT Walsheim Pro' monospace;
+    transition: all .5s ease;
+}
+ .boxs .box:nth-child(4) .box-top i{
+    font-size: 25px;
+    padding: .5rem;
+    border-radius: 50%;
+    color: rgb(0, 0, 0);
+    transform: rotate(45deg) ;
+    position: absolute;
+    right: 0;
+    background: -webkit-linear-gradient(84.28deg, #FE7E9F 0%, #B831BF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
+}   
+ .boxs .box:nth-child(4) .box-bottom{
+    background: -webkit-linear-gradient(84.28deg, #FE7E9F 0%, #B831BF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: absolute;
+    top: 85%;
+    left: 46.5%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .5s ease;
+
+}
+ .boxs .box:nth-child(4) .box-bottom p{
+    font-weight: 700;
+    font-size: 32px;
+    background: -webkit-linear-gradient(84.28deg, #FE7E9F 0%, #B831BF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+       font-family: 'GT Walsheim Pro' monospace;
+    text-align: left;
+    transition: .5s ease-in-out;
+    text-transform: uppercase;
+}
+
+/* 5 */
+ .boxs .box:nth-child(5){
+    width: 23%;
+    height: 170px;
+    border-radius: 20px;
+    padding: 1rem;
+    background: rgba(254, 254, 254, 1);
+    position: relative;
+    overflow: hidden;
+    transition: all .5s ease;
+}
+ .boxs .box:nth-child(5) .box-top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: .5rem;
+    position: relative;
+    transition: all .5s ease;
+
+}
+ .boxs .box:nth-child(5) .box-top span{
+    font-weight: 300;
+    font-size: 18px;
+    color:  rgba(5, 5, 5, 1);
+    opacity: .6;
+       font-family: 'GT Walsheim Pro' monospace;
+    transition: all .5s ease;
+}
+.boxs .box:nth-child(5) .box-bottom{
+    color: #000000;
+    position: absolute;
+    top: 85%;
+    left: 35%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .5s ease;
+
+}
+ .boxs .box:nth-child(5) .box-top i{
+    font-size: 25px;
+    padding: .5rem;
+    border-radius: 50%;
+    
+    transform: rotate(45deg) ;
+    position: absolute;
+    right: 0;
+    color: #000000;
+    opacity: .8;
+    cursor: pointer;
+}   
+
+ .boxs .box:nth-child(5) .box-bottom p{
+    font-weight: 700;
+    font-size: 32px;
+    color: #000000;
+       font-family: 'GT Walsheim Pro' monospace;
+    text-align: left;
+    transition: .5s ease-in-out;
+    text-transform: uppercase;
+}
+/* 6 */
+ .boxs .box:nth-child(6){
+    width: 23%;
+    height: 170px;
+    border-radius: 20px;
+    padding: 1rem;
+    background: rgba(254, 254, 254, 1);
+    position: relative;
+    overflow: hidden;
+    transition: all .5s ease;
+}
+ .boxs .box:nth-child(6) .box-top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: .5rem;
+    position: relative;
+    transition: all .5s ease;
+
+}
+ .boxs .box:nth-child(6) .box-top span{
+    font-weight: 300;
+    font-size: 18px;
+    color:  rgba(5, 5, 5, 1);
+    opacity: .6;
+       font-family: 'GT Walsheim Pro' monospace;
+    transition: all .5s ease;
+}
+ .boxs .box:nth-child(6) .box-top i{
+    font-size: 25px;
+    padding: .5rem;
+    border-radius: 50%;
+    color: rgb(0, 0, 0);
+    transform: rotate(45deg) ;
+    position: absolute;
+    right: 0;
+    color: #FF4D4D;
+    cursor: pointer;
+}   
+ .boxs .box:nth-child(6) .box-bottom{
+    color: #FF4D4D;
+    position: absolute;
+    top: 85%;
+    left: 30.5%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .5s ease;
+
+}
+ .boxs .box:nth-child(6) .box-bottom p{
+    font-weight: 700;
+    font-size: 32px;
+    color: #FF4D4D;
+       font-family: 'GT Walsheim Pro' monospace;
+    text-align: left;
+    transition: .5s ease-in-out;
+    text-transform: uppercase;
+}
+/* 7 */
+ .boxs .box:nth-child(7){
+    width: 23%;
+    height: 170px;
+    border-radius: 20px;
+    padding: 1rem;
+    background: rgba(254, 254, 254, 1);
+    position: relative;
+    overflow: hidden;
+    transition: all .5s ease;
+}
+ .boxs .box:nth-child(7) .box-top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: .5rem;
+    position: relative;
+    transition: all .5s ease;
+
+}
+ .boxs .box:nth-child(7) .box-top span{
+    font-weight: 300;
+    font-size: 18px;
+    color:  rgba(5, 5, 5, 1);
+    opacity: .6;
+       font-family: 'GT Walsheim Pro' monospace;
+    transition: all .5s ease;
+}
+ .boxs .box:nth-child(7) .box-top i{
+    font-size: 25px;
+    padding: .5rem;
+    border-radius: 50%;
+    color: rgb(0, 0, 0);
+    transform: rotate(45deg) ;
+    position: absolute;
+    right: 0;
+    color: #5FE0D8;
+    cursor: pointer;
+}   
+ .boxs .box:nth-child(7) .box-bottom{
+    color: #5FE0D8;
+    position: absolute;
+    top: 85%;
+    left: 30.5%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .5s ease;
+
+}
+ .boxs .box:nth-child(7) .box-bottom p{
+    font-weight: 700;
+    font-size: 32px;
+    color: #5FE0D8;
+       font-family: 'GT Walsheim Pro' monospace;
+    text-align: left;
+    transition: .5s ease-in-out;
+    text-transform: uppercase;
+}
+/* 8 */
+ .boxs .box:nth-child(8){
+    width: 23%;
+    height: 170px;
+    border-radius: 20px;
+    padding: 1rem;
+    background: rgba(254, 254, 254, 1);
+    position: relative;
+    overflow: hidden;
+    transition: all .5s ease;
+}
+ .boxs .box:nth-child(8) .box-top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: .5rem;
+    position: relative;
+    transition: all .5s ease;
+}
+ .boxs .box:nth-child(8) .box-top span{
+    font-weight: 300;
+    font-size: 18px;
+    color:  rgba(5, 5, 5, 1);
+    opacity: .6;
+       font-family: 'GT Walsheim Pro' monospace;
+    transition: all .5s ease;
+}
+ .boxs .box:nth-child(8) .box-top i{
+    font-size: 25px;
+    padding: .5rem;
+    border-radius: 50%;
+    color: rgb(0, 0, 0);
+    transform: rotate(45deg) ;
+    position: absolute;
+    right: 0;
+    color: #009EFD;
+    cursor: pointer;
+}   
+ .boxs .box:nth-child(8) .box-bottom{
+    color: #009EFD;
+    position: absolute;
+    top: 85%;
+    left: 22.5%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .5s ease;
+}
+ .boxs .box:nth-child(8) .box-bottom p{
+    font-weight: 700;
+    font-size: 32px;
+    color: #009EFD;
+       font-family: 'GT Walsheim Pro' monospace;
+    text-align: left;
+    transition: .5s ease-in-out;
+    text-transform: uppercase;
+}
+/* 9 */
+ .boxs .box:nth-child(9){
+    width: 23%;
+    height: 170px;
+    border-radius: 20px;
+    padding: 1rem;
+    background: rgba(254, 254, 254, 1);
+    position: relative;
+    overflow: hidden;
+    transition: all .5s ease;
+}
+ .boxs .box:nth-child(9) .box-top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: .5rem;
+    position: relative;
+    transition: all .5s ease;
+
+}
+ .boxs .box:nth-child(9) .box-top span{
+    font-weight: 300;
+    font-size: 18px;
+    color:  rgba(5, 5, 5, 1);
+    opacity: .6;
+       font-family: 'GT Walsheim Pro' monospace;
+    transition: all .5s ease;
+}
+ .boxs .box:nth-child(9) .box-top i{
+    font-size: 25px;
+    padding: .5rem;
+    border-radius: 50%;
+    color: rgb(0, 0, 0);
+    transform: rotate(45deg) ;
+    position: absolute;
+    right: 0;
+    color: #6773E5;
+    cursor: pointer;
+}   
+ .boxs .box:nth-child(9) .box-bottom{
+    color: #6773E5;
+    position: absolute;
+    top: 85%;
+    left: 22.5%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .5s ease;
+
+}
+ .boxs .box:nth-child(9) .box-bottom p{
+    font-weight: 700;
+    font-size: 32px;
+    color: #6773E5;
+       font-family: 'GT Walsheim Pro' monospace;
+    text-align: left;
+    transition: .5s ease-in-out;
+    text-transform: uppercase;
+}
+/* 10 */
+ .boxs .box:nth-child(10){
+    width: 23%;
+    height: 170px;
+    border-radius: 20px;
+    padding: 1rem;
+    background: rgba(254, 254, 254, 1);
+    position: relative;
+    overflow: hidden;
+    transition: all .5s ease;
+}
+ .boxs .box:nth-child(10) .box-top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: .5rem;
+    position: relative;
+    transition: all .5s ease;
+
+}
+ .boxs .box:nth-child(10) .box-top span{
+    font-weight: 300;
+    font-size: 18px;
+    color:  rgba(5, 5, 5, 1);
+    opacity: .6;
+       font-family: 'GT Walsheim Pro' monospace;
+    transition: all .5s ease;
+}
+ .boxs .box:nth-child(10) .box-top i{
+    font-size: 25px;
+    padding: .5rem;
+    border-radius: 50%;
+    color: rgb(0, 0, 0);
+    transform: rotate(45deg) ;
+    position: absolute;
+    right: 0;
+    color: #FF8686;
+    cursor: pointer;
+}   
+ .boxs .box:nth-child(10) .box-bottom{
+    color: #FF8686;
+    position: absolute;
+    top: 85%;
+    left: 35%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .5s ease;
+
+}
+ .boxs .box:nth-child(10) .box-bottom p{
+    font-weight: 700;
+    font-size: 32px;
+    color: #FF8686;
+       font-family: 'GT Walsheim Pro' monospace;
+    text-align: left;
+    transition: .5s ease-in-out;
+    text-transform: uppercase;
+
+}
+/* 11 */
+.boxs .box:nth-child(11){
+    width: 23%;
+    height: 170px;
+    border-radius: 20px;
+    padding: 1rem;
+    background:  rgba(254, 254, 254, 1);
+    position: relative;
+    overflow: hidden;
+    transition: all .5s ease;
+}
+ .boxs .box:nth-child(11) .box-top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: .5rem;
+    position: relative;
+    transition: all .5s ease;
+
+}
+ .boxs .box:nth-child(11) .box-top span{
+    font-weight: 300;
+    font-size: 18px;
+    color:  rgba(5, 5, 5, 1);
+    opacity: .6;
+       font-family: 'GT Walsheim Pro' monospace;
+    transition: all .5s ease;
+}
+ .boxs .box:nth-child(11) .box-top i{
+    font-size: 25px;
+    padding: .5rem;
+    border-radius: 50%;
+    color: rgb(0, 0, 0);
+    transform: rotate(45deg) ;
+    position: absolute;
+    right: 0;
+    color: #1565C0;
+    cursor: pointer;
+}   
+ .boxs .box:nth-child(11) .box-bottom{
+    color: #1565C0;
+    position: absolute;
+    top: 85%;
+    left: 40%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .5s ease;
+
+}
+ .boxs .box:nth-child(11) .box-bottom p{
+    font-weight: 700;
+    font-size: 32px;
+    color: #1565C0;
+       font-family: 'GT Walsheim Pro' monospace;
+    text-align: left;
+    transition: .5s ease-in-out;
+    text-transform: uppercase;
+
+}
+
+
+.boxs3{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 1rem;
+    flex-wrap: wrap;
+    width: 100% !important;
+ }
+ 
+ 
+.boxs3 .box3{
+    width: 318.5px;
+    height: 200px;
+    border-radius: 20px;    
+    padding: 1rem;
+    background: rgba(217, 217, 217, 1);
+    position: relative;
+    overflow: hidden;
+    transition: all .5s ease;
+}
+ .container4 .search-buttons3 {
+    display: flex;
+    align-items: center;
+    margin-bottom: -1.3rem;
+    justify-content: start;
+    gap: 1rem;
+    
+}
+
+ .container4 .search-buttons3 button {
+    background-color: #ffffff;
+    padding: 0.7rem 1.5rem;
+    border-radius: 1.5rem;
+    color: rgb(0, 0, 0);
+    font-weight: 400;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s;
+    border: none;
+    font-family: 'GT Walsheim Pro Regular', sans-serif;
+}
+
+ .container4 .search-buttons3 a.active button {
+    background-color: rgba(95, 224, 216, 1);
+    color: white;
+}
+
+ .container4 .search-buttons3 .btnbtn1 {
+    color: rgb(0, 0, 0);
+}
+.slide2{
+    display: none;    
+}
+.boxs7 .container4{
+    margin-bottom: 80px;
+}
+
+@media screen and (max-width: 1200px) {
+   
+     .boxs{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;    
+        width: 100% !important;
+    }
+    .boxs7{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;    
+        width: 100% !important;
+    }
+     .boxs .box:nth-child(1){
+        width: 46%;
+        font-size: 25px;
+    }
+     .boxs .box:nth-child(2){
+        width: 46%;
+    }
+     .boxs .box:nth-child(3){
+        width: 46%;
+    }
+     .boxs .box:nth-child(4){    
+        width: 46%;
+    }
+     .boxs .box:nth-child(5){
+        width: 46%;
+    }
+     .boxs .box:nth-child(6){
+        width: 46%;
+    }
+     .boxs .box:nth-child(7){
+        width: 46%;
+    }
+     .boxs .box:nth-child(8){
+        width: 46%;
+    }
+     .boxs .box:nth-child(9){
+        width: 46%;
+    }
+     .boxs .box:nth-child(10){
+        width: 46%;
+    }
+    .boxs .box:nth-child(11){
+        width: 46%;
+    }
+    .boxs .box:nth-child(12){
+        width: 46%;
+    }
+    .boxs .box:nth-child(13){
+        width: 46%;
+    }
+    .boxs .box:nth-child(14){
+        width: 46%;
+    }
+    .boxs .box:nth-child(15){
+        width: 46%;
+    }
+     .boxs .box:nth-child(1) .box-bottom{
+        top: 83%;
+        left: 41%;
+        text-align: left;
+       
+    }
+     .boxs .box:nth-child(2) .box-bottom{
+        top: 83%;
+        left: 50%;
+        text-align: left;
+       font-size: 15px;
+       p{
+        font-size: 15px;
+        transform: scale(1.8);
+       }
+    }
+     .boxs .box:nth-child(3) .box-bottom{
+        top: 83%;
+        left: 40%;
+        text-align: left;
+        p{
+            font-size: 18px;
+            transform: scale(1.8);
+           }
+    }
+     .boxs .box:nth-child(4) .box-bottom{
+        top: 83%;
+        left: 52%;
+        text-align: left;
+        p{
+            font-size: 17px;
+            transform: scale(1.8);
+           }
+    }
+     .boxs .box:nth-child(5) .box-bottom{
+        top: 83%;
+        left: 42%;
+        text-align: left;
+       
+    }
+     .boxs .box:nth-child(6) .box-bottom{
+        top: 83%;
+        left: 37%;
+        text-align: left;
+       
+    }
+     .boxs .box:nth-child(7) .box-bottom{
+        top: 83%;
+        left: 37%;
+        text-align: left;
+       
+    }
+     .boxs .box:nth-child(8) .box-bottom{
+        top: 83%;
+        left: 27%;
+        text-align: left;
+       
+    }
+     .boxs .box:nth-child(9) .box-bottom{
+        top: 83%;
+        left: 27%;
+        text-align: left;
+       
+    }
+     .boxs .box:nth-child(10) .box-bottom{
+        top: 83%;
+        left: 41%;
+        text-align: left;
+       
+    }
+    .boxs .box:nth-child(11) .box-bottom{
+        top: 83%;
+        left: 48%;
+        text-align: left;
+       
+    }
+    .Slide{
+        display: flex;
+    }
+    .btns3{
+        display: none;
+    }
+    .slide2{
+        display: block;
+    }
+    
+    .boxs{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: .8rem; 
+       flex-wrap: wrap;
+       margin-bottom: 20px;
+       margin: 0 auto;
+    }
+    .boxs7  {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: .8rem; 
+       flex-wrap: wrap;
+       margin-bottom: 20px;
+       margin: 0 auto;
+    }
+    .boxs3{
+        width: 100% !important;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 0 auto;
+    }
+}
