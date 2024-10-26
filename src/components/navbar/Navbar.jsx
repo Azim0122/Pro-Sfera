@@ -10,7 +10,7 @@ function Navbar(loginNavigate) {
     <>
     <nav>
       <div className=" media">
-        <h1><img className='logo'  src="./public/imgs/logo-text.svg" alt="" /> </h1>
+        <h1><img className='logo'  src="/public/imgs/logo-text.svg" alt="" /> </h1>
         <div className="buttons">
           <button onClick={(e) => { Navigate() }}  className='btn1'>Вход по <span>ID</span></button>
          <div className="btns">

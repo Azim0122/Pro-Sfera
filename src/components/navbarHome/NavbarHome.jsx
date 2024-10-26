@@ -13,7 +13,7 @@ function NavbarHome({query, setQuery,saveValue}) {
          <nav>
                 <div className="container3 media">
                     <Link to={"/"}>
-                        <h1><img className='logo' src="./public/imgs/logo-text.svg" alt="" /></h1>
+                        <h1><img className='logo' src="/public/imgs/logo-text.svg" alt="" /></h1>
                     </Link>
                     <div className="search1">
                         <div className="search">

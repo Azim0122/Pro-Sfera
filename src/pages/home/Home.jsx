@@ -70,8 +70,8 @@ function Home({setQuery, handleChange, data, city, query}) {
         <section className='section_1'>
           <div className="container">
         <div className="ai"> 
-        <NavLink to={"/"}><img src="./public/imgs/earth.svg" alt="" /> Поиск</NavLink>
-        <NavLink to={"/ai-sferius"}><img src="./public/imgs/Shape Ai.svg" alt="" />AI Sferius</NavLink>
+        <NavLink to={"/"}><img src="/public/imgs/earth.svg" alt="" /> Поиск</NavLink>
+        <NavLink to={"/ai-sferius"}><img src="/public/imgs/Shape Ai.svg" alt="" />AI Sferius</NavLink>
         </div>
           <h1>Добрый день, Гость!</h1>
           <span className='logo2'> Чем можем быть полезны? </span>
@@ -108,7 +108,7 @@ function Home({setQuery, handleChange, data, city, query}) {
               }}
             >
               <div>
-                {item.title.slice(0, 35)}...
+                {item.title.slice(0, 25)}...
                 <span>
                   <i className="fa-solid fa-arrow-up"></i>
                 </span>

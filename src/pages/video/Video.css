@@ -6,6 +6,7 @@ main .container4 {
 }
 main .container4 .search-results-vid {
     width: 55%;
+    margin-top: 187px;
 }
 a{
     text-decoration: none;
@@ -151,7 +152,9 @@ main .container4 .search-results-vid .info1-box-vid .about-results-vid .about-te
     main .container4 {
         padding: 0rem 1rem;
     }
-  
+    main .container4 .search-results-vid {
+        margin-top: 215px !important;
+    }
     main .container4 .search-results-vid .info1-box-vid .about-results-vid .about-text-vid  a h1{
         font-size: 16.6px;
         font-weight: 500;
@@ -190,14 +193,16 @@ main .container4 .search-results-vid .info1-box-vid .about-results-vid .about-te
     }
     main .container4 .search-results-vid{
         width: 100% !important;
-       margin-top: 40px !important;
+       margin-top: 255px !important;
         
     }
     main .container4 .search-results-vid .info1-box-vid .about-results-vid .about-bottom-vid{
         margin-top: 20px;
     }
    
-
+    main .container4 .search-results-vid .info1-box-vid .about-results-vid .about-bottom-vid h3{
+        width: 100% !important;
+    }
 
 
 

@@ -413,7 +413,7 @@ hr{
   }
 
 @media screen and (max-width: 1200px) {
-    main section .container h1{
+    main section .container>h1{
        font-size: 35px;
        font-weight: 400;
        margin-bottom: 5px;
@@ -468,4 +468,20 @@ main section .container4 .links ul{
     
     }
 
+}
+@media screen and (min-width: 290px) and (max-width: 366px) {
+    main section .container>h1{
+        font-size: 29px !important;
+        font-weight: 400;
+        margin-bottom: 5px;
+        margin-top: 80px;
+     }
+     main section .container .logo2{
+    
+   
+        margin: 0 auto;
+        font-size: 18px;
+        font-weight: 300;
+        margin-bottom: 30px;
+     }
 }

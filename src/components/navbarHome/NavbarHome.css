@@ -23,8 +23,7 @@ nav .container3 {
     align-items: center;
     justify-content: space-between;
     padding: 1rem 0rem;
-    border-bottom: 1px solid rgba(95, 224, 216, 1);
-  
+    border-bottom: 1px solid rgba(95, 224, 216, 1); 
 }
 
 nav .container3 h1 {
@@ -104,9 +103,6 @@ nav .container3 .buttons3 .btn2:active {
     transform: scale(0.9);
 }
 
-nav .container3 .buttons3 .btn-settings:hover i {
-    animation: logo 3s ease-in-out both;
-}
 
 .container3 .search {
     position: relative;
@@ -144,7 +140,7 @@ nav .container3 .buttons3 .btn-settings:hover i {
     color: rgba(5, 5, 5, 1);
     font-size: 18px;
     font-weight: 400;
-    font-family: GT Walsheim Pro;
+    font-family: 'GT Walsheim Pro';
     width: 100% !important;
     position: relative;
 }
@@ -226,25 +222,8 @@ nav .container3 .buttons3 .btn-settings:hover i {
     animation: globe 3s ease-in-out infinite;
 }
 
-@keyframes globe {
-    0% {
-        transform: rotate(0deg) scale(1.5);
-    }
-
-    100% {
-        transform: rotate(360deg) scale(1.5);
-    }
-}
 
 
-
-main .container4 .search-buttons3 {
-    display: flex;
-    align-items: center;
-    margin-bottom: 1.3rem;
-    gap: 1rem;
-    
-}
 
 main .container4 .search-buttons3 button {
     background-color: #ffffff;
