@@ -20,7 +20,7 @@ function NavbarHome({query, setQuery,saveValue}) {
                             <div className="search-input">
                           <form action="">
                           <input value={query}  onInput={(e) => {setQuery(e.target.value)}} type="text" name="focus" required class="search-box" placeholder="Введите ваш запрос" />
-                                <button  class="close-icon" type="reset"></button>
+                                <button onClick={() => setQuery('')}  class="close-icon" type="reset"></button>
                                 <button className='button-srch'><i class='bx bx-globe'></i></button>
                           </form>
                             </div>

@@ -75,12 +75,12 @@ function App() {
     myHeaders.append("Content-Type", "application/json");
 
     const raw = JSON.stringify({
-      limit,
+      limit: 10,
       page: 1,
       query
     });
 
-
+ 
     const requestOptions = {
       method: "POST",
       headers: myHeaders,

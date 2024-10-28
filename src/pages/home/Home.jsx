@@ -59,6 +59,34 @@ function Home({setQuery, handleChange, data, city, query}) {
   }, [city]);
   console.log(temperature);
   
+  useEffect(() => {
+    if (window.location.pathname == '/') {
+      localStorage.removeItem('query');  // Удаляем значение из localStorage
+      setQuery('');
+    }
+  }, []);
+  const [titleIcon, setTitleIcon] = useState([]); 
+  const [recentSearches, setRecentSearches] = useState([ 'Новости', 'Погода сегодня', 'Лучшие практики программирования', 'Руководство по React', 'Последние новости технологий', 'Как приготовить пасту', 'Кино и сериалы', 'Музыка', 'Путешествия', 'Здоровый образ жизни', ]); 
+  useEffect(() => {
+     const icons = recentSearches.map(search => {
+       switch (search) {
+         case 'Новости': return 'fa-solid fa-newspaper'; 
+         case 'Погода сегодня': return 'fa-solid fa-sun'; 
+         case 'Лучшие практики программирования': return 'fa-solid fa-code'; 
+         case 'Руководство по React': return 'fa-brands fa-react'; 
+         case 'Последние новости технологий': return 'fa-solid fa-microchip'; 
+         case 'Как приготовить пасту': return 'fa-solid fa-utensils'; 
+         case 'Кино и сериалы': return 'fa-solid fa-film'; 
+         case 'Музыка': return 'fa-solid fa-music'; 
+         case 'Путешествия': return 'fa-solid fa-plane'; 
+         case 'Здоровый образ жизни': return 'fa-solid fa-heartbeat'; default: return ''; 
+        } 
+        })  ;
+         setTitleIcon(icons)
+       }, [recentSearches])
+  const handleSelectItem2 = (item) => {
+    setQuery(item); // Устанавливаем выбранное значение в поле ввода
+  };
   
   const [category, setCategory] = React.useState('Сервисы');  
   return (
@@ -79,13 +107,15 @@ function Home({setQuery, handleChange, data, city, query}) {
                             <div className="search-input2">
                           <form action="">
                           <input onInput={(e) => {setQuery(e.target.value)}} type="input" name="focus" required class="search-box" placeholder="Введите ваш запрос" />
-                                <button class="close-icon" type="reset"></button>
+                                <button class="close-icon" type="reset" ></button>
                                 <button onClick={(e) => {
       e.preventDefault();
       if (query !== "") {
         handleNavigate();  // Переходим к навигации, если есть значение
+        
       }else {
         alert("Заполните поле поиска");  // Выводим сообщение, если поле пустое
+        
       }
        // Add your navigation logic here
       handleChange(); // Add your handle change logic here
@@ -96,26 +126,48 @@ function Home({setQuery, handleChange, data, city, query}) {
                                
                           </form>
                        
-        <div className="search-add">
-          {data?.map((item, index) => (
-            <Link
-              key={index}
-              onClick={(e) => {
-                handleSelectItem(item);
-                handleNavigate();
-                console.log(handleNavigate());
-                e.preventDefault();
-              }}
-            >
-              <div>
-                {item.title.slice(0, 25)}...
-                <span>
-                  <i className="fa-solid fa-arrow-up"></i>
-                </span>
-              </div>
-            </Link>
-          ))}
-        </div>
+                          <div className="search-add">
+                {query === '' ? (
+                    recentSearches.map((item, index) => (
+                      <Link 
+                      key={index} 
+                      onClick={(e) => { 
+                        handleSelectItem2(item); 
+                          handleNavigate(); 
+                          e.preventDefault(); 
+                      }}
+                  >
+                      <div>
+                          {item.slice(0, 25)}...
+                          &nbsp;
+                            <i className={titleIcon[index]}></i>
+
+                          <span>
+                              <i className="fa-solid fa-arrow-up"></i>
+                          </span>
+                      </div>
+                  </Link>
+                    ))
+                ) : (
+                    data.map((item, index) => (
+                        <Link 
+                            key={index} 
+                            onClick={(e) => { 
+                                handleSelectItem(item); 
+                                handleNavigate(); 
+                                e.preventDefault(); 
+                            }}
+                        >
+                            <div>
+                                {item.title.slice(0, 25)}...
+                                <span>
+                                    <i className="fa-solid fa-arrow-up"></i>
+                                </span>
+                            </div>
+                        </Link>
+                    ))
+                )}
+            </div>
     
                           <div className="search-info">
             <div className="weather">

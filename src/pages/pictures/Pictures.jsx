@@ -3,6 +3,7 @@ import './Pictures.css'
 import NavbarHome from '../../components/navbarHome/NavbarHome'
 import { Link } from 'react-router-dom'
 function Pictures({dataImg, query, setQuery}) {
+  
   return (
     <>
     <NavbarHome query={query} setQuery={setQuery} />
@@ -11,31 +12,14 @@ function Pictures({dataImg, query, setQuery}) {
 
        
 <div className="boxs1">
-  {dataImg?.map((item, index)=>{
-    return(
-    
-      
-        <div className="imgs2">
-         <a target='_blank' href={item.displayLink}>
-         <div className="img2">
-         <img src={item.link} alt="" />
-         </div>
-         <div className="img2-title">
-          <div className="icon2">
-            <img src={item.favicon} alt="" />
-          </div>
-          <div className="title">
-            <h1>{item.title}</h1>
-          </div>
-         </div>
-         </a>
-        </div>
-       
-    
 
-    )
-  })}
-
+<div className="image-tab-container">
+   {dataImg?.map((image, index) => (
+     <div key={index} className="image-card"> 
+     <img src={image.link} alt={image.alt} />
+      </div> 
+     ))}
+     </div>
 
 </div>
 </div>

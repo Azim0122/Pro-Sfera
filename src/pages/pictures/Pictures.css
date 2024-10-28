@@ -8,6 +8,9 @@
     max-width: 1200px !important;
     margin: 0 auto;
 }
+.container3{
+    margin-top: 180px;
+}
 .boxs1{
     display: flex;
     align-items: center;
@@ -30,6 +33,34 @@
     width: 100% !important;
  }
 
+
+ .image-tab-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 16px;
+    padding: 16px;
+}
+
+.image-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.image-card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.image-card:hover {
+    transform: scale(1.05);
+}
+.pictures-imgs11{
+    display: none;
+}
 
 .button3 button a{
     color: white !important;
